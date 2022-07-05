@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
 .container {
   width: 700px;
   margin: 0 auto;
@@ -18,7 +22,7 @@
 }
 
 .quote-description {
-  width: 650px;
+  max-width: 650px;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
@@ -76,9 +80,17 @@
 
 .contact-bloc {
   font-family: 'Open Sans', sans-serif;
-  width: 650px;
+  max-width: 650px;
   margin: 0 auto;
   font-weight: 100;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   align-items: center;
 }
 
@@ -99,7 +111,34 @@
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+      justify-content: space-between !important;
+  }
+}
+
 @media (max-width: 550px) {
+  #times-style {
+    font-size: 24px;
+  }
+
+  .nav-logo {
+    width: 45px;
+  }
+
+  #logo-txt {
+    width: 205px;
+    margin-left: 15px;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer .btn-menu {
+    padding: 0px;
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -116,4 +155,3 @@
     padding: 0px 16px;
   }
 }
-
