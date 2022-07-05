@@ -4,6 +4,10 @@
   flex-grow: 0 !important;
 }
 
+.navbar-expand-lg {
+  justify-content: space-between !important;
+}
+
 .container {
   width: 700px;
   margin: 0 auto;
