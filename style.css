@@ -40,6 +40,35 @@
   padding: 0px 50px;
 }
 
+.btn-menu-white {
+  font-family: times;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-style: italic;
+  display: inline-block
+}
+
+.btn-menu-white:hover {
+  color: white;
+}
+
+.btn-menu-white::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 300ms;
+  color: white;
+}
+
+.btn-menu-white:hover::after {
+  width: 100%;
+  color: white;
+}
+
 .btn-menu {
   font-family: times;
   text-decoration: none;
